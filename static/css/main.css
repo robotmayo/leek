@@ -660,7 +660,12 @@ form {
   margin-bottom: 2.5rem; }
 
 body {
-  font-family: Helvetica, sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background: #DDD;
+  font-size: 10px; }
+
+.container {
+  max-width: 1200px; }
 
 header.banner {
   min-height: 200px;
@@ -689,5 +694,20 @@ header.banner {
           border-bottom: 4px solid transparent; }
         header.banner nav ul li a:hover {
           border-bottom: 4px solid green; }
+
+.floater {
+  background: #FFF;
+  padding: 30px;
+  font-size: 1.8rem; }
+  .floater header a {
+    text-decoration: none;
+    color: inherit; }
+  .floater header .post-meta.post-date {
+    color: #666; }
+  .floater header h3 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-bottom: #ffc70e 3px solid; }
 
 /*# sourceMappingURL=main.css.map */

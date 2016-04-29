@@ -2,6 +2,12 @@
 
 body {
   font-family: $main-fonts;
+  background: $background;
+  font-size: $base-font-size;
+}
+
+.container{
+  max-width: 1200px;
 }
 
 
@@ -44,4 +50,26 @@ header.banner{
 
   }
 
+}
+
+.floater{
+  background : #FFF;
+  padding : 30px;
+  font-size: 1.8rem;
+  header {
+    a{
+      text-decoration: none;
+      color : inherit;
+    }
+    .post-meta.post-date{
+      color : #666;
+    }
+    
+    h3 {
+      font-size: 2.4rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      border-bottom: #ffc70e 3px solid;
+    }
+  }
 }
