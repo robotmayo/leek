@@ -1,0 +1,47 @@
+@import 'variables.scss';
+
+body {
+  font-family: $main-fonts;
+}
+
+
+
+header.banner{
+  min-height: 200px;
+  max-height : 200px;
+  border-bottom: 5px solid green;
+  background-size: cover;
+
+  nav {
+    position: relative;
+    ul {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          background: #FFAE28;
+          padding : 3px;
+          margin-right: 20px;
+          font-size: 25px;
+          width : 100%;
+          border-bottom: 4px solid rgba(0,0,0,0);
+        }
+
+        a:hover{
+          border-bottom: 4px solid green;
+        }
+
+        display: inline-block;
+        border-bottom: 4px solid rgba(0,0,0,0);
+      }
+
+      list-style: none;
+      text-transform: uppercase;
+    }
+
+  }
+
+}
