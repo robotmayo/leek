@@ -10,66 +10,126 @@ body {
   max-width: 1200px;
 }
 
-
-
-header.banner{
-  min-height: 200px;
-  max-height : 200px;
-  border-bottom: 5px solid green;
+.hero-article{
   background-size: cover;
+  min-height: 220px;
+}
 
+#site-banner{
+  border-bottom: 3px solid rgba(255, 174, 40, 0.4);
+  #header-logo{
+    max-height: 60px;
+    width : auto;
+  }
   nav {
-    position: relative;
     ul {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      margin-top: 10px;
+      margin-bottom: 0;
       li {
         a {
-          color: white;
+          color: #0C83CC;
           text-decoration: none;
-          background: #FFAE28;
           padding : 3px;
           margin-right: 20px;
           font-size: 25px;
           width : 100%;
           border-bottom: 4px solid rgba(0,0,0,0);
         }
-
         a:hover{
           border-bottom: 4px solid green;
         }
-
         display: inline-block;
         border-bottom: 4px solid rgba(0,0,0,0);
       }
-
       list-style: none;
       text-transform: uppercase;
     }
+  }
+}
 
+.featured-post{
+  height: 220px;
+  max-height: 220px;
+  margin-bottom: 20px;
+  background: url('http://i.imgur.com/s4mndNY.png') no-repeat;
+  background-size: cover;
+  h1{
+    text-transform: uppercase;
+    background: #FFFC42;
+    display: inline-block;
+    padding: 3px;
+    margin-top: 60px;
+  }
+
+  .post-meta{
+    text-transform: uppercase;
+    background: $banner-text-background;
+    // color : white;
+    padding : 3px;
+    font-size: 2rem;
+    margin-right: 10px;
   }
 
 }
 
-.floater{
-  background : #FFF;
-  padding : 30px;
-  font-size: 1.8rem;
-  header {
-    a{
-      text-decoration: none;
-      color : inherit;
+.posts article{
+
+  &.post{
+    background : #9DDAFF;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    header {
+      border-bottom: $banner-text-background 3px solid;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+      width : auto;
+
+      img{
+        display:inline;
+        width : 100%;
+        height: auto;
+      }
+
+      a{
+        text-decoration: none;
+        color : $link-color;
+        display : block;
+      }
+
+      .post-meta-wrapper{
+        padding : $post-padding;
+      }
+      .post-meta{
+        font-size: 1.5rem;
+        &.post-date{
+          color : #666;
+          font-size: 1.3rem;
+          margin-top: 4px;
+
+          &:before{
+            content: "·";
+            padding: 0 5px;
+          }
+
+        }
+      }
+
+      h3 {
+        font-size: 4rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding : $post-padding;
+      }
     }
-    .post-meta.post-date{
-      color : #666;
-    }
-    
-    h3 {
-      font-size: 2.4rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      border-bottom: #ffc70e 3px solid;
+
+    p {
+      padding : $post-padding;
     }
   }
+
+
+
+
 }
