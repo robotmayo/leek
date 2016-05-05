@@ -10,9 +10,14 @@ body {
   max-width: 1200px;
 }
 
-.hero-article{
-  background-size: cover;
-  min-height: 220px;
+a {
+  color :$link-color;
+  font-weight : $link-weight;
+  text-decoration: none;
+}
+
+a:hover{
+  color : #FFF;
 }
 
 #site-banner{
@@ -29,16 +34,15 @@ body {
       margin-bottom: 0;
       li {
         a {
-          color: #0C83CC;
+          color: white;
           text-decoration: none;
           padding : 3px;
           margin-right: 20px;
-          font-size: 25px;
+          font-size: 20px;
           width : 100%;
-          border-bottom: 4px solid rgba(0,0,0,0);
         }
         a:hover{
-          border-bottom: 4px solid green;
+          color : white;
         }
         display: inline-block;
         border-bottom: 4px solid rgba(0,0,0,0);
@@ -164,4 +168,14 @@ body {
       padding : $post-padding;
     }
   }
+}
+
+
+@media (max-width: 1000px) {
+  .posts article{
+    &.post{
+      width : 100%;
+    }
+  }
+
 }
