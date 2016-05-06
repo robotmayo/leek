@@ -5,7 +5,28 @@ body {
   background: $background;
   font-size: $base-font-size;
 }
-
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem
+}
+h3{
+  font-size: 3rem;
+}
+h4{
+  font-size: 2.5rem;
+}
+h5{
+  font-size: 2rem;
+}
+h6{
+  font-size: 1.8rem;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .container{
   max-width: 1200px;
 }
@@ -61,7 +82,7 @@ a:hover{
   background-size: cover;
   h1{
     text-transform: uppercase;
-    background: #FFFC42;
+    background: $headliner-color;
     display: inline-block;
     padding: 3px;
     margin-top: 60px;
@@ -166,6 +187,64 @@ a:hover{
 
     p {
       padding : $post-padding;
+    }
+  }
+}
+
+article.single-post{
+  width : 100%;
+
+  header {
+    height : 350px;
+  .img-wrap{
+    max-height: 350px;
+    overflow-y : hidden;
+    position: absolute;
+    top : 0;
+    left: 0;
+    z-index: -1;
+
+      img {
+        width : 100%;
+      }
+    }
+  .post-meta-wrapper {
+    h1 {
+      text-align: center;
+      background: $headliner-color;
+    }
+    .post-description {
+      font-size: 3.5rem;
+      display: inline-block;
+      color : #FFF;
+      background: $background;
+      max-width: 500px;
+      padding : 5px;
+    }
+    .post-date{
+      margin-left: -2px;
+    }
+    h4 {
+      padding : 5px;
+      font-size: 2rem;
+      display: inline-block;
+      background: $headliner-color;
+    }
+  }
+  }
+
+  .post-body{
+    padding-bottom: 15px;
+    .headliner{
+      font-size: 4rem;
+      padding-top: 20px;
+    }
+    background: $primary-color-c;
+    padding-left: 40px;
+    p {
+      font-size: 2rem;
+      max-width: 800px;
+      word-wrap: break-word;
     }
   }
 }
