@@ -1,0 +1,10 @@
+@import 'variables';
+
+html{
+  font-size: $body-font-size;
+}
+
+body{
+  font-family: $body-font-family;
+  line-height: 1.2;
+}

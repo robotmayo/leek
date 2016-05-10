@@ -1,0 +1,52 @@
+@import 'variables';
+
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+  font-family: $heading-family;
+  font-weight: 800;
+  margin: $header-margin;
+}
+
+h1{
+  font-size: $h1-font-size;
+}
+
+h2{
+  font-size: $h2-font-size;
+}
+
+h3{
+  font-size: $h3-font-size;
+}
+
+h4{
+  font-size: $h4-font-size;
+}
+
+h5{
+  font-size: $h5-font-size;
+}
+
+h6{
+  font-size: $h6-font-size;
+}
+
+p{
+  font-size: $paragraph-font-size;
+  max-width: $paragraph-width;
+  margin: $paragraph-margin;
+}
+
+ul{
+ font-size: $list-font-size;
+ padding-left: 3rem;
+}
+
+ul ul{
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+a{
+  text-decoration: none;
+}
