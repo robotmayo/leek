@@ -32,13 +32,12 @@ h6{
 }
 
 p{
-  font-size: $paragraph-font-size;
   max-width: $paragraph-width;
   margin: $paragraph-margin;
+  line-height: $paragraph-lineheight;
 }
 
 ul{
- font-size: $list-font-size;
  padding-left: 3rem;
 }
 

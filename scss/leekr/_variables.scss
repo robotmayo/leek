@@ -3,7 +3,8 @@
 
 $heading-family: 'Raleway', sans-serif;
 $body-font-family: 'Roboto', sans-serif;
-$body-font-size: 62.5%;
+$sixty-two-point-five-percent: 62.5%;
+$body-font-size: 1.6rem;
 $horizontal-text-margin: 0.7rem;
 
 $h1-font-size : 6rem;
@@ -16,8 +17,7 @@ $header-margin: 1rem $horizontal-text-margin;
 
 
 
-$paragraph-font-size: 1.6rem;
 $paragraph-width: 60rem;
 $paragraph-margin: 1rem $horizontal-text-margin;
+$paragraph-lineheight: 1.5;
 
-$list-font-size: 1.3rem;

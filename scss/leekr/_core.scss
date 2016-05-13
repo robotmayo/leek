@@ -1,10 +1,11 @@
 @import 'variables';
 
 html{
-  font-size: $body-font-size;
+  font-size: $sixty-two-point-five-percent;
 }
 
 body{
   font-family: $body-font-family;
   line-height: 1.2;
+  font-size: $body-font-size;
 }

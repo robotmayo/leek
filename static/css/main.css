@@ -1,14 +1,10 @@
-@charset "UTF-8";
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/9/2014
-* Sass Version by Seth Coelen https://github.com/whatsnewsaes
-*/
-/* Base files. */
+@import url(https://fonts.googleapis.com/css?family=Raleway:800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,400italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900,400italic,900italic);
+* {
+  box-sizing: border-box; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -194,114 +190,22 @@ th {
 * www.getskeleton.com
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 12/9/2014
-* Sass Version by Seth Coelen https://github.com/whatsnewsaes
-*/
-html {
-  font-size: 62.5%; }
+* 12/29/2014
 
-body {
-  font-size: 1.5em;
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+The MIT License (MIT)
 
-a {
-  color: #1eaedb; }
-  a:hover {
-    color: #1b9cc5; }
+Copyright (c) 2011-2014 Dave Gamache
 
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid #e1e1e1; }
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box; }
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; }
-
-.u-pull-right {
-  float: right; }
-
-.u-pull-left {
-  float: left; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  font-weight: 300; }
-
-h1 {
-  font-size: 4.0rem;
-  line-height: 1.2;
-  letter-spacing: -.1rem; }
-
-h2 {
-  font-size: 3.6rem;
-  line-height: 1.25;
-  letter-spacing: -.1rem; }
-
-h3 {
-  font-size: 3.0rem;
-  line-height: 1.3;
-  letter-spacing: -.1rem; }
-
-h4 {
-  font-size: 2.4rem;
-  line-height: 1.35;
-  letter-spacing: -.08rem; }
-
-h5 {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  letter-spacing: -.05rem; }
-
-h6 {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  letter-spacing: 0; }
-
-@media (min-width: 550px) {
-  h1 {
-    font-size: 5.0rem; }
-
-  h2 {
-    font-size: 4.2rem; }
-
-  h3 {
-    font-size: 3.6rem; }
-
-  h4 {
-    font-size: 3.0rem; }
-
-  h5 {
-    font-size: 2.4rem; }
-
-  h6 {
-    font-size: 1.5rem; } }
-p {
-  margin-top: 0; }
-
-/* Modules */
-/*
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/9/2014
-* Sass Version by Seth Coelen https://github.com/whatsnewsaes
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -312,10 +216,12 @@ p {
   float: left;
   box-sizing: border-box; }
 
+/* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
     width: 85%;
     padding: 0; } }
+/* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
     width: 80%; }
@@ -330,58 +236,59 @@ p {
 
   .one.column,
   .one.columns {
-    width: 4.66667%; }
+    width: 4.66666666667%; }
 
   .two.columns {
-    width: 13.33333%; }
+    width: 13.3333333333%; }
 
   .three.columns {
     width: 22%; }
 
   .four.columns {
-    width: 30.66667%; }
+    width: 30.6666666667%; }
 
   .five.columns {
-    width: 39.33333%; }
+    width: 39.3333333333%; }
 
   .six.columns {
     width: 48%; }
 
   .seven.columns {
-    width: 56.66667%; }
+    width: 56.6666666667%; }
 
   .eight.columns {
-    width: 65.33333%; }
+    width: 65.3333333333%; }
 
   .nine.columns {
-    width: 74%; }
+    width: 74.0%; }
 
   .ten.columns {
-    width: 82.66667%; }
+    width: 82.6666666667%; }
 
   .eleven.columns {
-    width: 91.33333%; }
+    width: 91.3333333333%; }
 
   .twelve.columns {
     width: 100%;
     margin-left: 0; }
 
   .one-third.column {
-    width: 30.66667%; }
+    width: 30.6666666667%; }
 
   .two-thirds.column {
-    width: 65.33333%; }
+    width: 65.3333333333%; }
 
   .one-half.column {
     width: 48%; }
 
+  /* Offsets */
   .offset-by-one.column,
   .offset-by-one.columns {
-    margin-left: 8.66667%; }
+    margin-left: 8.66666666667%; }
 
   .offset-by-two.column,
   .offset-by-two.columns {
-    margin-left: 17.33333%; }
+    margin-left: 17.3333333333%; }
 
   .offset-by-three.column,
   .offset-by-three.columns {
@@ -389,11 +296,11 @@ p {
 
   .offset-by-four.column,
   .offset-by-four.columns {
-    margin-left: 34.66667%; }
+    margin-left: 34.6666666667%; }
 
   .offset-by-five.column,
   .offset-by-five.columns {
-    margin-left: 43.33333%; }
+    margin-left: 43.3333333333%; }
 
   .offset-by-six.column,
   .offset-by-six.columns {
@@ -401,34 +308,34 @@ p {
 
   .offset-by-seven.column,
   .offset-by-seven.columns {
-    margin-left: 60.66667%; }
+    margin-left: 60.6666666667%; }
 
   .offset-by-eight.column,
   .offset-by-eight.columns {
-    margin-left: 69.33333%; }
+    margin-left: 69.3333333333%; }
 
   .offset-by-nine.column,
   .offset-by-nine.columns {
-    margin-left: 78%; }
+    margin-left: 78.0%; }
 
   .offset-by-ten.column,
   .offset-by-ten.columns {
-    margin-left: 86.66667%; }
+    margin-left: 86.6666666667%; }
 
   .offset-by-eleven.column,
   .offset-by-eleven.columns {
-    margin-left: 95.33333%; }
+    margin-left: 95.3333333333%; }
 
   .offset-by-one-third.column,
   .offset-by-one-third.columns {
-    margin-left: 34.66667%; }
+    margin-left: 34.6666666667%; }
 
   .offset-by-two-thirds.column,
   .offset-by-two-thirds.columns {
-    margin-left: 69.33333%; }
+    margin-left: 69.3333333333%; }
 
   .offset-by-one-half.column,
-  .offset-by-one-half.column {
+  .offset-by-one-half.columns {
     margin-left: 52%; } }
 .container:after,
 .row:after,
@@ -437,344 +344,81 @@ p {
   display: table;
   clear: both; }
 
-.button,
-button {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box; }
-
-input[type="submit"], input[type="reset"], input[type="button"] {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box; }
-
-.button:hover,
-button:hover {
-  color: #333;
-  border-color: #888888;
-  outline: 0; }
-
-input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
-  color: #333;
-  border-color: #888888;
-  outline: 0; }
-
-.button:focus,
-button:focus {
-  color: #333;
-  border-color: #888888;
-  outline: 0; }
-
-input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
-  color: #333;
-  border-color: #888888;
-  outline: 0; }
-
-.button.button-primary,
-button.button-primary {
-  color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0; }
-
-input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
-  color: #fff;
-  background-color: #33c3f0;
-  border-color: #33c3f0; }
-
-.button.button-primary:hover,
-button.button-primary:hover {
-  color: #fff;
-  background-color: #1eaedb;
-  border-color: #1eaedb; }
-
-input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover {
-  color: #fff;
-  background-color: #1eaedb;
-  border-color: #1eaedb; }
-
-.button.button-primary:focus,
-button.button-primary:focus {
-  color: #fff;
-  background-color: #1eaedb;
-  border-color: #1eaedb; }
-
-input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
-  color: #fff;
-  background-color: #1eaedb;
-  border-color: #1eaedb; }
-input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
-  height: 38px;
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #d1d1d1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box; }
-
-textarea,
-select {
-  height: 38px;
-  padding: 6px 10px;
-  background-color: #fff;
-  border: 1px solid #d1d1d1;
-  border-radius: 4px;
-  box-shadow: none;
-  box-sizing: border-box; }
-
-input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; }
-
-textarea {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  min-height: 65px;
-  padding-top: 6px;
-  padding-bottom: 6px; }
-
-input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus {
-  border: 1px solid #33c3f0;
-  outline: 0; }
-
-textarea:focus,
-select:focus {
-  border: 1px solid #33c3f0;
-  outline: 0; }
-
-label,
-legend {
-  display: block;
-  margin-bottom: .5rem;
-  font-weight: 600; }
-
-fieldset {
-  padding: 0;
-  border-width: 0; }
-
-input[type="checkbox"], input[type="radio"] {
-  display: inline; }
-
-label > .label-body {
-  display: inline-block;
-  margin-left: .5rem;
-  font-weight: normal; }
-
-ul {
-  list-style: circle inside; }
-
-ol {
-  list-style: decimal inside;
-  padding-left: 0;
-  margin-top: 0; }
-
-ul {
-  padding-left: 0;
-  margin-top: 0; }
-  ul ul, ul ol {
-    margin: 1.5rem 0 1.5rem 3rem;
-    font-size: 90%; }
-
-ol ol, ol ul {
-  margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
-
-li {
-  margin-bottom: 1rem; }
-
-code {
-  padding: .2rem .5rem;
-  margin: 0 .2rem;
-  font-size: 90%;
-  white-space: nowrap;
-  background: #f1f1f1;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px; }
-
-pre > code {
-  display: block;
-  padding: 1rem 1.5rem;
-  white-space: pre; }
-
-th,
-td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #e1e1e1; }
-
-th:first-child,
-td:first-child {
-  padding-left: 0; }
-
-th:last-child,
-td:last-child {
-  padding-right: 0; }
-
-button,
-.button {
-  margin-bottom: 1rem; }
-
-input,
-textarea,
-select,
-fieldset {
-  margin-bottom: 1.5rem; }
-
-pre,
-blockquote,
-dl,
-figure,
-table,
-p,
-ul,
-ol,
-form {
-  margin-bottom: 2.5rem; }
+html {
+  font-size: 62.5%; }
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #010E16;
-  font-size: 10px; }
+  line-height: 1.2;
+  font-size: 1.6rem; }
 
-.container {
-  max-width: 1200px; }
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  margin: 1rem 0.7rem; }
 
-.hero-article {
-  background-size: cover;
-  min-height: 220px; }
+h1 {
+  font-size: 6rem; }
 
-#site-banner {
-  border-bottom: 3px solid rgba(255, 174, 40, 0.4); }
-  #site-banner #header-logo {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    max-height: 60px;
-    width: auto; }
-  #site-banner nav ul {
-    margin-top: 20px;
-    margin-bottom: 0;
-    list-style: none;
-    text-transform: uppercase; }
-    #site-banner nav ul li {
-      display: inline-block;
-      border-bottom: 4px solid transparent; }
-      #site-banner nav ul li a {
-        color: #0C83CC;
-        text-decoration: none;
-        padding: 3px;
-        margin-right: 20px;
-        font-size: 25px;
-        width: 100%;
-        border-bottom: 4px solid transparent; }
-      #site-banner nav ul li a:hover {
-        border-bottom: 4px solid green; }
+h2 {
+  font-size: 5.2rem; }
 
-.featured-post {
-  height: 220px;
-  max-height: 220px;
-  margin-bottom: 20px;
-  background: url("http://i.imgur.com/s4mndNY.png") no-repeat;
-  background-size: cover; }
-  .featured-post h1 {
-    text-transform: uppercase;
-    background: #FFFC42;
+h3 {
+  font-size: 4.2rem; }
+
+h4 {
+  font-size: 3.3rem; }
+
+h5 {
+  font-size: 2.7rem; }
+
+h6 {
+  font-size: 2.2rem; }
+
+p {
+  max-width: 60rem;
+  margin: 1rem 0.7rem;
+  line-height: 1.5; }
+
+ul {
+  padding-left: 3rem; }
+
+ul ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #FF9E99; }
+
+nav#main-nav {
+  background: #FAFFB2;
+  height: 125px; }
+  nav#main-nav #main-logo-image {
+    height: 60px;
+    margin-right: 30px; }
+  nav#main-nav #main-logo-text {
     display: inline-block;
-    padding: 3px;
-    margin-top: 60px; }
-  .featured-post .post-meta {
-    text-transform: uppercase;
-    background: #FD8B8B;
-    padding: 3px;
-    font-size: 2rem;
-    margin-right: 10px; }
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap; }
-
-.posts article.post {
-  background: #8BE6FD;
-  font-size: 1.8rem;
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-  margin-right: 2%;
-  width: 48%; }
-  .posts article.post:first-child {
-    width: 100%; }
-  .posts article.post .youtube .thumb-wrapper {
+    font-size: 2.5rem;
+    margin: 0;
     position: relative;
-    padding-bottom: 56.25%;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0; }
-    .posts article.post .youtube .thumb-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  .posts article.post header {
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    width: auto; }
-    .posts article.post header .img-wrap {
-      max-height: 350px;
-      overflow-y: hidden; }
-    .posts article.post header img {
-      display: inline;
-      width: 100%;
-      height: auto; }
-    .posts article.post header a {
-      text-decoration: none;
-      color: #222;
-      display: block; }
-    .posts article.post header .post-meta-wrapper {
-      padding: 0 30px; }
-    .posts article.post header .post-meta {
-      font-size: 1.5rem; }
-      .posts article.post header .post-meta.post-date {
-        color: #666;
-        font-size: 1.3rem;
-        margin-top: 4px; }
-        .posts article.post header .post-meta.post-date:before {
-          content: "·";
-          padding: 0 5px; }
-    .posts article.post header h3 {
-      font-size: 4rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      margin-bottom: 0;
-      padding: 0 30px; }
-  .posts article.post p {
-    padding: 0 30px; }
+    top: -20px; }
+  nav#main-nav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 2.2rem; }
+  nav#main-nav li {
+    display: inline-block;
+    padding-right: 1.5rem; }
+  nav#main-nav hr {
+    background: linear-gradient(to right, #dddddd 0%, rgba(221, 221, 221, 0) 100%);
+    border: none;
+    height: 1px;
+    width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
