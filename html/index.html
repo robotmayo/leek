@@ -3,31 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <title>Leekr</title>
-  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="/dist/static/css/main.css">
 </head>
 <body>
   <nav id="main-nav">
     <div class="container">
-      <a href="#" id="main-logo">
-        <img id="main-logo-image" src="https://i.imgur.com/i9BnJT2.png" alt="unofficial-giant-bomb-discord-gameday-logo">
-        <h1 id="main-logo-text">Gameday</h1>
-      </a>
-      <hr>
-      <ul class="">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Podcasts</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <div class="row">
+        <a href="/" class="three columns"><img src="https://i.imgur.com/i9BnJT2.png" alt="logo"></a>
+        <ul class="eight columns">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Podcasts</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <main class="container" id="main-content">
-    <article class="row" id="featured-post">
-      <header>
-        <h2>Welcome to the Jungle</h2>
-      </header>
-    </article>
+    <div class="row pos-rel" >
+      <article class="image-post post" id="featured">
+        <header>
+          <a href="#">
+            <h2>Welcome to the Jungle</h2>
+            <div class="byline">
+              <span class="author">
+                MemeMaster9000
+              </span>
+              <span class="date">
+                MAY 16 2016
+              </span>
+            </div>
+            <img src="http://i.imgur.com/DE2bGfs.jpg" alt="">
+          </a>
+        </header>
+      </article>
+    </div>
+
+    <div class="row">
+      <article class="post image-post six columns">
+        <header>
+          <a href="#"><h4>Welcome to the Jungle</h4></a>
+          <img src="http://i.imgur.com/DE2bGfs.jpg" alt="">
+          <div class="byline">
+            <span class="author">
+              <a href="#">MemeMaster9000</a>
+            </span>
+            <span class="date">
+              MAY 16 2016
+            </span>
+          </div>
+        </header>
+      </article>
+
+      <article class="post image-post six columns">
+        <header>
+          <a href="#"><h4>Welcome to the Jungle</h4></a>
+          <img src="http://i.imgur.com/DE2bGfs.jpg" alt="">
+          <div class="byline">
+            <span class="author">
+              <a href="#">MemeMaster9000</a>
+            </span>
+            <span class="date">
+              MAY 16 2016
+            </span>
+          </div>
+        </header>
+        <p class="snippet">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+           Soluta ipsa incidunt, minima inventore ullam,
+           sit repudiandae dolores in dignissimos aperiam dicta quo,
+           magni necessitatibus nobis officia autem iure eum. Neque.
+        </p>
+        <a href="#"><span class="read-more">Read More > </span></a>
+      </article>
+    </div>
+
   </main>
 
 </body>

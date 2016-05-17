@@ -1,11 +1,20 @@
 @import 'leekr/all';
+@import 'variables';
 
 body{
-  background: #FF9E99;
+  background: $background-color;
+  font-family: 'Roboto', sans-serif;
+  color : $main-color;
+}
+
+a{
+  color : $anchor-color;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 nav#main-nav{
-  background: #FAFFB2;
+  background: $nav-background-color;
   height : 125px;
   #main-logo-image{
     height: 60px;
@@ -30,11 +39,103 @@ nav#main-nav{
     display: inline-block;
     padding-right: 1.5rem;
   }
-  
+
   hr{
     background: linear-gradient(to right, rgba(221,221,221,1) 0%,rgba(221,221,221,0) 100%);
     border: none;
     height : 1px;
     width: 100%;
   }
+}
+
+
+.post{
+  border : 2px solid $post-border-color;
+  padding : 10px;
+  margin-top : 10px;
+  background: $post-background;
+
+  .read-more{
+    float: right;
+  }
+
+  header{
+    width : 100%;
+  }
+  &.image-post{
+
+    header{
+      overflow: hidden;
+
+      h4{
+        color : $post-header-color;
+        margin : 0;
+      }
+
+      img{
+        width : 100%;
+      }
+
+      .byline{
+        float : right;
+        font-size: 1.4rem;
+        span {
+          text-align: right;
+          font-weight: bold;
+          text-transform:uppercase;
+          &.author a{
+            color : $author-color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+  }
+
+  &#featured{
+    border : none;
+    padding : 0;
+    background: none;
+    margin-bottom: 20px;
+    header{
+      height : 300px;
+      overflow: hidden;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      h2{
+        position: absolute;
+        left : 0;
+        top : 30%;
+        background: $featured-header-color;
+        margin-left: 0;
+        font-size: 4rem;
+        padding : 5px;
+        color : $post-header-color;
+      }
+
+      .byline{
+        position: absolute;
+        right : 0;
+        top : 15%;
+
+        span{
+          background: $featured-header-color;
+          margin-right: 10px;
+          padding : 3px;
+        }
+
+
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
 }
