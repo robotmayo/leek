@@ -1,3 +1,4 @@
+@import 'variables';
 .post{
   border : 2px solid $post-border-color;
   padding : 10px;
@@ -10,18 +11,19 @@
 
   header{
     width : 100%;
-    
+
     h2{
       color : $main-color;
       margin : 0;
       padding-bottom: 10px;
       font-size: 3.4rem;
     }
-    
+
   }
-  
-  .snippet{
+
+  p.snippet{
     margin-top : 20px;
+    max-width : 100%;
   }
 }
 
@@ -35,7 +37,7 @@
     &.author a{
       color : $author-color;
       font-weight: bold;
-      
+
       &:after{
         margin-left: 10px;
         margin-right: 10px;
@@ -68,6 +70,8 @@
   padding : 0;
   background: none;
   margin-bottom: 20px;
+  width : 85%;
+  margin : 0 auto;
   header{
     height : 300px;
     overflow: hidden;
@@ -80,32 +84,28 @@
     h2{
       position: absolute;
       left : 0;
-      top : 30%;
+      top : 20%;
       background: $featured-header-color;
       margin-left: 0;
       font-size: 4rem;
       padding : 5px;
       color : $post-header-color;
-    }
-
-    .byline{
-      position: absolute;
-      right : 0;
-      top : 15%;
-
-      span{
-        background: $featured-header-color;
-        margin-right: 10px;
-        padding : 3px;
-      }
-
-
+      max-width: 30%;
     }
 
     img {
       width: 100%;
     }
   }
+  .byline, .read-more{
+    visibility: hidden;
+  }
 }
 
-
+aside.related-posts{
+  header {
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+}
